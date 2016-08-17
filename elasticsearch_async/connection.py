@@ -3,9 +3,9 @@ import asyncio
 import aiohttp
 from aiohttp.errors import FingerprintMismatch, ClientError
 
-from elasticsearch.exceptions import ConnectionError, ConnectionTimeout, SSLError
-from elasticsearch.connection import Connection
-from elasticsearch.compat import urlencode
+from elasticsearch_ac.exceptions import ConnectionError, ConnectionTimeout, SSLError
+from elasticsearch_ac.connection import Connection
+from elasticsearch_ac.compat import urlencode
 
 from .helpers import ensure_future
 
