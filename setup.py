@@ -12,7 +12,7 @@ f.close()
 
 install_requires = [
     'aiohttp',
-    'elasticsearch>=2.4.0',
+    # 'elasticsearch>=2.4.0',
 ]
 
 tests_require = [
@@ -45,6 +45,9 @@ setup(
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: Implementation :: CPython",
+    ],
+    dependency_links=[
+        'https://github.com/elastic/elasticsearch-py/tarball/async#egg=elasticsearch-ac-2.3.0'
     ],
     install_requires=install_requires,
 
