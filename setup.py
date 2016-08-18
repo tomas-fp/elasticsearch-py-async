@@ -51,6 +51,6 @@ setup(
     ],
     install_requires=install_requires,
 
-    test_suite="test_elasticsearch_async.run_tests.run_all",
+    test_suite="tests.run_tests.run_all",
     tests_require=tests_require,
 )
