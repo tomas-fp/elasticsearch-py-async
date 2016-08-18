@@ -3,7 +3,7 @@ import time
 import logging
 from itertools import chain
 
-from elasticsearch_ac import Transport, TransportError, ConnectionTimeout, ConnectionError, SerializationError
+from elasticsearch import Transport, TransportError, ConnectionTimeout, ConnectionError, SerializationError
 
 from .connection import AIOHttpConnection
 from .helpers import ensure_future
@@ -205,4 +205,3 @@ class AsyncTransport(Transport):
                                                     ignore=ignore,
                                                     timeout=timeout),
                              loop=self.loop)
-
